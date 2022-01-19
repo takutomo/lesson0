@@ -7,11 +7,11 @@
     </head>
     <body>
         <div class="header">
-            <div class="header-logo">Hello精機製作所</div>
+            <div class="header-logo">大阪産業大学 クリエイトセンター活動だより</div>
             <div class="header-list">
                 <ul>
-                    <li>Hello精機製作所とは</li>
-                    <li>Hello一覧</li>
+                    <li>クリエイトセンターとは</li>
+                    <li>クリエイト設備一覧</li>
                     <li>お問い合わせ</li>
                 </ul>
             </div>
@@ -19,33 +19,51 @@
 
         <div class="main">
             <div class="copy-container">
-                <h1>Hello manufacturing company<span>.</span></h1>
-                <h2>ものづくりの世界へようこそ</h2>
+                <h1><span>クリエイトセンターは 学生スタッフのアルバイトシフト勤務を主体にして運営しています。<br>実際に 色んな ものづくりを行い、楽しみながら 日々 ものづくり技術を研鑽しています。<br>各種講習会も 私達学生スタッフが行っています。 </span></h1>
+                
             </div>
             <div class="contents">
-                <h3 class="section-title">Hello 一覧</h3>
+                <h3 class="section-title">2021年度 写真でみるクリエイトセンター学生スタッフ活動</h3>
                 <div class="contents-item">
-                    <p id></p><img src="photo1.jpg" Width="250" height="150">
-                    <p>猫</p>
+                    <p id="test_img3"><img src="image2.jpg" Width="500" height="300"></p>
+                    <script>
+                        let setImgFunc2=(function(){
+                            let imgList={image1:"image3001.jpg",image2:"image3002.jpg",image3:"image3003.jpg",image4:"image3004.jpg",image5:"image3005.jpg",image6:"image3006.jpg",image7:"image3007.jpg",image8:"image3008.jpg",image9:"image3009.jpg",image10:"image3010.jpg",image11:"image3011.jpg",image12:"image3012.jpg",image13:"image3013.jpg"}
+                            let num=1;
+                            let imgPath;
+                            return function(){
+                                num++;
+                                imgPath=imgList['image'+num];
+                                testImg=document.querySelector('#test_img3 img').src=imgPath;
+                                if (num===13){
+                                    num=0;
+                                }
+                            }
+                        })();
+                        setInterval(function(){
+                            setImgFunc2();
+                        },1000)
+                    </script>
+                    <p>旋盤フライス盤講習</p>
                 </div>
                 <div class="contents-item">
-                    <p id></p><img src="犬.jpg" width="250" height="150">
-                    <p>犬</p>
+                    <p id></p><img src="image1.jpg" width="500" height="300">
+                    <p>３Ⅾプリンター講習</p>
                 </div>
                 <div class="contents-item">
-                    <p id></p><img src="うさぎ.jpg" width="250" height="150">
-                    <p>うさぎ</p>
+                    <p id></p><img src="image4.jpg" width="500" height="300">
+                    <p>SOLIDWORKS講習</p>
                 </div>
                 <div class="contents-item">
-                    <p id></p><img src="さかな.jpg" width="250" height="150">
-                    <p>さかな</p>
+                    <p id></p><img src="image101.jpg" width="500" height="300">
+                    <p>マシニングセンタ講習</p>
                 </div>
                 <div class="contents-item">
-                    <p id></p><img src="ロボット.jpg" width="250" height="150">
-                    <p>ロボット</p>
+                    <p id></p><img src="image2003.jpg" width="500" height="300">
+                    <p>イラストレータ シール作り体験会</p>
                 </div>
                 <div class="contents-item">
-                    <p id="test_img3"><img src="image1.jpg" width="250" height="150"></p>
+                    <p id="test_img3"><img src="image1.jpg" width="500" height="300"></p>
                     <script>
                         let setImgFunc2=(function(){
                             let imgList={image1:"image1.jpg", image2:"image2.jpg", image3:"image3.jpg",image4:"image4.jpg",image5:"image5.jpg",image6:"image6.jpg",image7:"image7.jpg"};
@@ -68,24 +86,14 @@
                  <a href="https://www.osaka-sandai.ac.jp/c-tec/cc?doing_wp_cron=1639115663.7330329418182373046875">CLICK</a>
                 </div>
             </div>
-            <div class="contact-form">
-                <h3 class="section-title">お問い合わせ</h3>
-                <p>メールアドレス（必須）</p>
-                <input>
-
-                <p>お問い合わせ内容（必須）</p>
-                <textarea></textarea>
-
-                <p>※必須項目は必ずご入力ください</p>
-                <input class="contact-submit" type="submit" value="送信">
-            </div>
+            
         </div>
 
         <div class="footer">
-            <div class="footer-logo">Hello Manufacturing company</div>
+            <div class="footer-logo">大阪産業大学 クリエイトセンター</div>
             <div class="footer-list">
                 <ul>
-                    <li>Hello概要</li>
+                    <li>クリエイト卒業生</li>
                     <li>スタッフ採用</li>
                     <li>お問い合わせ</li>
                 </ul>
