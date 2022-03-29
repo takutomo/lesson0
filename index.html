@@ -70,7 +70,27 @@
                             setImgFunc3();
                         },1500)
                     </script>
-                    <p>３Ⅾプリンター／SOLIDWORKS講習</p>                    
+                    <p>３Ⅾプリンター／SOLIDWORKS講習</p> 
+                    <p id="test_img9"><img src="image7001.jpg" width="500" height="300"></p>
+                    <script>
+                        let setImgFunc8=(function(){
+                            let imgList={image71:"image7001.jpg",image72:"image7002.jpg",image73:"image7003.jpg",image74:"image7004.jpg",image75:"image7005.jpg",image76:"image7006.jpg",image77:"image7007.jpg",image78:"image7008.jpg",image79:"image7009.jpg"}
+                            let num=71;
+                            let imgPath;
+                            return function(){
+                                num++;
+                                imgPath=imgList['image'+num];
+                                testImg=document.querySelector('#test_img9 img').src=imgPath;
+                                if (num===79){
+                                    num=70;
+                                }
+                            }
+                        })();
+                        setInterval(function(){
+                            setImgFunc8();
+                        },1500)
+                    </script>
+                    <p>オープンキャンパス ものづくり教室</p>                  
                 </div>
                 <div class="contents-item">
 
@@ -116,6 +136,26 @@
                         },1500)
                     </script>
                     <p>イラストレータ シール作り体験会</p>
+                    <p id="test_img10"><img src="image8001.jpg" width="500" height="300"></p>
+                    <script>
+                        let setImgFunc9=(function(){
+                            let imgList={image81:"image8001.jpg",image82:"image8002.jpg",image83:"image8003.jpg",image84:"image8004.jpg",image85:"image8005.jpg",image86:"image8006.jpg",image87:"image8007.jpg"}
+                            let num=81;
+                            let imgPath;
+                            return function(){
+                                num++;
+                                imgPath=imgList['image'+num];
+                                testImg=document.querySelector('#test_img10 img').src=imgPath;
+                                if (num===87){
+                                    num=80;
+                                }
+                            }
+                        })();
+                        setInterval(function(){
+                            setImgFunc9();
+                        },1500)
+                    </script>
+                    <p>その他イベント</p>  
                 </div>    
 
                 <div class="contents-item">
